@@ -1,8 +1,9 @@
+import Text from "./Text";
 
 function App() {
   return (
     <div >
-      Hello
+      <Text />
     </div>
   );
 }
