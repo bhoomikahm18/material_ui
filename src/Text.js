@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Typography, Button, TextField, FormGroup, FormControlLabel, Checkbox } from '@mui/material';
+import { Typography, Button, TextField, FormGroup, FormControlLabel, Checkbox, InputLabel, MenuItem, Select, FormControl, AppBar, Toolbar } from '@mui/material';
 
 const Text = () => {
     const [inputs, setInputs] = useState({
         name: "",
         email: "",
         password: "",
-        subscribe: false
+        subscribe: false,
+        age: 0
     });
     const handleChange = (e) => {
         setInputs((prevState) => ({
@@ -37,8 +38,27 @@ const Text = () => {
                     {/* <FormControlLabel required control={<Checkbox />} label="Required" />
                     <FormControlLabel disabled control={<Checkbox />} label="Disabled" /> */}
                 </FormGroup>
+                <FormControl fullWidth>
+                    <InputLabel>Age</InputLabel>
+                    <Select name='age'
+                        value={inputs.age}
+                        label="Age"
+                        onChange={handleChange}
+                    >
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                </FormControl>
                 <Button type='submit'>Submit</Button>
             </form>
+
+            <AppBar >
+                <Toolbar>
+                    <Typography>LOGO</Typography>
+                    <Button variant='contained' sx={{ marginLeft: "auto" }} color='warning'>Hello</Button>
+                </Toolbar>
+            </AppBar>
         </div>
     )
 }
