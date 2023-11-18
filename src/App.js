@@ -9,10 +9,12 @@ import Navbar from "./components/Navbar";
 // import Test8 from "./Test8";
 // import Text from "./Text";
 
+const linksArray = ["Products", "Services", "Overview", "Contact Us"]
+
 function App() {
   return (
     <div >
-      <Navbar />
+      <Navbar links={linksArray}/>
     </div>
   );
 }
