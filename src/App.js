@@ -7,17 +7,18 @@
 // import Layout from "./Layout";
 import Test10 from "./Test10";
 import Test11 from "./Test11";
+import Test12 from "./Test12";
 // import Test9 from "./Test9";
 // import Navbar from "./components/Navbar";
 // import Test8 from "./Test8";
 // import Text from "./Text";
 
-const linksArray = ["Products", "Services", "Overview", "Contact Us"]
+// const linksArray = ["Products", "Services", "Overview", "Contact Us"]
 
 function App() {
   return (
     <div >
-      <Test11 />
+      <Test12 />
     </div>
   );
 }
