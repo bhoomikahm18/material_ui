@@ -8,6 +8,7 @@
 import Test10 from "./Test10";
 import Test11 from "./Test11";
 import Test12 from "./Test12";
+import Test13 from "./Test13";
 // import Test9 from "./Test9";
 // import Navbar from "./components/Navbar";
 // import Test8 from "./Test8";
@@ -18,7 +19,7 @@ import Test12 from "./Test12";
 function App() {
   return (
     <div >
-      <Test12 />
+      <Test13 />
     </div>
   );
 }
